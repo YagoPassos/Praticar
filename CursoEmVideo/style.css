@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#teste {
+    margin-top: 250px; 
+    background-color: grey;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}

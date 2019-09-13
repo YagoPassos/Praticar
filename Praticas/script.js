@@ -10,6 +10,21 @@
 // window.alert("Soma: " + (n1 + n2));
 
 // ---------------------------------------------------------------------------------------------
+// var navB = document.getElementsByClassName('.navB');
+
+// function cg_color (){
+//     navB.style.backgroundColor ='blue';
+//     navB.style.transitionDuration = '1000ms';
+// };
+// function dg_color(){
+//     navB.style.backgroundColor =' rgb(0, 4, 53)';
+//     navB.style.transitionDuration = '1000ms';
+// }
+
+
+// navB.addEventListener('mouseenter', cg_color);
+// navB.addEventListener('mouseover', dg_color);
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

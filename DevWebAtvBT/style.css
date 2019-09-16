@@ -1,4 +1,31 @@
+
+nav{
+    margin: 0;
+    padding: 0 !important;
+}
 .navbar {
-    background-color: rgb(74, 9, 136);
+    background-color: #1B0049;
+    color: #00F46A;
+    justify-content: space-between;
+}
+
+.nav-link{
+    padding: 70px;
+    background-color: #1B0049;
+    color:white;
+    height: 80px;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
     
+}
+
+.nav-link:hover  {
+    background-color: #00F46A !important;
+    color: black !important;
+    transition: 2000ms !important;
+}
+
+.fa-bars{
+    color: #00F46A;
 }

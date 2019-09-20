@@ -13,31 +13,37 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm">
-
-      <span class=" navbar-brand">
-        <h1>Stepys</h1>
-      </span>
-
-      <button type="button" class="navbar-toggler" data-toogle="collapse" data-target=".navbar-nav">
-        <span class="toogler-icon">
-          <i class="fas fa-bars" style color: #00F46A></i>
-        </span>
-      </button>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav text-capitalize">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-        </ul>
+  <header id="home">
+    <div class="container">
+      <div class="hamburger-menu">
+        <i class="fas fa-bars toggle"></i>
+        <i class="fas fa-times toggle"></i>
       </div>
-  </nav>
+      <nav class="d-flex align-items-center justify-content-center">
+        <a class="navbar-brand" href="#home">
+          <h2 class="img-fluid">Stepys</h2>
+        </a>
+        <ul class="nav-list text-center p-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="hero-text w-100 text-whte px-2 px-sm-0">
+        <!-- px-sm-0 quando estiver em telas muito pequenas padding é igual a 0-->
+        <h1 class="display-4">Bem Vindo</h1>
+        <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a class="btn" href="#">Explorar</a>
+        <a class="btn" href="#">Encontrar</a>
+      </div>
+    </div>
+  </header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <script src="script.js"></script>
   <script src="/DevWebAtvBT/node_modules/jquery/dist/jquery.js"></script>
   <script src="/DevWebAtvBT/node_modules/popper.js/dist/popper.js"></script>

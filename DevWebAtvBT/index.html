@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="/DevWebAtvBT/node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
   <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/js/all.js">
   <title>Stepys</title>
@@ -15,19 +15,24 @@
 <body>
   <header id="home">
     <div class="container">
-      <div class="hamburger-menu">
-        <i class="fas fa-bars toggle"></i>
-        <i class="fas fa-times toggle"></i>
-      </div>
-      <nav class="d-flex align-items-center justify-content-center">
+      
+      <!-- <i class="fas fa-times toggle"></i> -->
+      <nav class="navbar navbar-expand-md d-flex align-items-center justify-content-between">
         <a class="navbar-brand" href="#home">
-          <h2 class="img-fluid">Stepys</h2>
+          <h1 class="img-fluid ">Stepys</h1>
         </a>
-        <ul class="nav-list text-center p-0">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-        </ul>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+          <i class="fas fa-bars toggle"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSite">
+          <ul class="navbar-nav nav-list text-center p-0">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </div>
       </nav>
       <div class="hero-text w-100 text-whte px-2 px-sm-0">
         <!-- px-sm-0 quando estiver em telas muito pequenas padding é igual a 0-->

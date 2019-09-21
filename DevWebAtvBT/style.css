@@ -2,6 +2,21 @@
 nav{
     margin: 0;
     padding: 0 !important;
+    position: relative;
+   
+}
+
+nav a {
+    color: white;
+    border: 0.5px solid #00F46A;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+nav a:hover {
+    background-color: #00F46A;
+    color: black;
+    transition: 1500ms;
 }
 
 header {
@@ -19,38 +34,19 @@ header > .container {
 }
 
 .navbar-brand {
-    position: absolute;
     width: 100%;
-    max-width: 100px;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    
+    max-width: 250px;
 }
 
-.navbar-brand :hover {
-    opacity: .8;
-    transition: 650ms;
+.navbar-nav, #navbarSite, .collapse, .navbar-collapse{
+    flex-grow: unset;
+
 }
 
-.hamburger-menu {
-    position: fixed;
-    top: 25px;
-    right: 15px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    cursor: pointer;
+.nav-list {
+    list-style: none;
 }
 
-.hamburger-menu i {
-    font-size: 30px;
-    margin: auto;
-}
-
-.hamburger-menu .fa-times{
-    display: none;
-}
 /* .nav-link{
     padding: 70px;
     background-color: #1B0049;

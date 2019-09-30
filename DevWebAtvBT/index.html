@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -15,43 +15,114 @@
 <body>
   <header id="home">
     <div class="container">
-      
+
       <!-- <i class="fas fa-times toggle"></i> -->
       <nav class="navbar navbar-expand-md d-flex align-items-center justify-content-between">
         <a class="navbar-brand" href="#home">
-          <h1 class="img-fluid ">Stepys</h1>
+          <h1 class=""> <i class="fas fa-paint-brush"></i>Stepys Gallery</h1>
         </a>
-        
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
           <i class="fas fa-bars toggle"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSite">
           <ul class="navbar-nav nav-list text-center p-0">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mostruario" transition="1500ms"><i class="fas fa-eye"></i>
+                Mostruario</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeria"> <i class="fas fa-image"></i> Galeria</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre"><i class="fas fa-feather-alt"></i> Sobre</a></li>
           </ul>
         </div>
       </nav>
-      <div class="hero-text w-100 text-whte px-2 px-sm-0">
+      <div class="hero-text text-whte px-2 px-sm-0">
         <!-- px-sm-0 quando estiver em telas muito pequenas padding é igual a 0-->
-        <h1 class="display-4">Bem Vindo</h1>
+        <h1 class="display-4">Welcome</h1>
         <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <a class="btn" href="#">Explorar</a>
-        <a class="btn" href="#">Encontrar</a>
       </div>
     </div>
   </header>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <section id="mostruario" class="mostruario container">
+    <div>
+      <img class="banner1" src="./_img/banner1.jpg" width="700px" alt="banner1">
+      <img class="banner2" src="./_img/banner2.png" alt="banner2">
+    </div>
+  </section>
+  <section id="galeria" class="galeria">
+    <div class="container">
+      <div class="d-flex">
+        <div class="col-4"><img class="glryImg" src="./_img/art1.png" alt=""></div>
+        <div class="col-4"><img class="glryImg" src="./_img/art2.png" alt=""></div>
+        <div class="col-4"><img class="glryImg" src="./_img/art3.png" alt=""></div>
+      </div>
+      <div class="d-flex">
+        <div class="col-4"><img class="glryImg" src="./_img/art4.png" alt=""></div>
+        <div class="col-4"><img class="glryImg" src="./_img/art5.png" alt=""></div>
+        <div class="col-4"><img class="glryImg" src="./_img/art6.png" alt=""></div>
+      </div>
+      <div class="d-flex ">
+        <div class="col-4"><img class="glryImg" src="./_img/art7.png" alt=""></div>
+        <div class="col-4"><img class="glryImg" src="./_img/art8.png" alt=""></div>
+        <div class="col-4"><img class="glryImg" src="./_img/art9.png" alt=""></div>
+      </div>
+    </div>
+  </section>
+  <section id="sobre" class="sobre">
+    <div class="sbr d-flex container">
+      <div class="texto">
+        <h1>Sobre mim</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis euismod nisi, et dignissim orci
+          euismod nec. Quisque sollicitudin lorem a justo tincidunt consectetur. Maecenas scelerisque quam nisl. Aenean
+          vitae nisl id arcu venenatis semper vitae eget est. Donec fermentum aliquam nunc, in faucibus massa posuere
+          ac. Etiam iaculis semper turpis a sagittis. Maecenas ac bibendum diam. Nam a sapien lorem. Curabitur massa
+          nunc, fermentum ac tellus at, sollicitudin posuere felis.
+
+          Sed dictum vel elit et molestie. Pellentesque quis mauris vitae ligula ultricies ultricies sit amet sit amet
+          leo. Quisque tempor lectus sed erat congue interdum. Nunc diam ante, malesuada eget sagittis ac, pharetra ac
+          orci. Integer euismod ac arcu ac aliquet. Vivamus orci purus, mollis nec feugiat vitae, sagittis sit amet
+          felis. Maecenas iaculis sit amet massa ac hendrerit. Mauris vel urna eu odio porttitor ornare sed sodales
+          elit.
+
+          In eget vehicula orci, eget dignissim neque. Praesent sit amet nibh ligula. Nunc consequat, neque in
+          pellentesque volutpat, eros turpis placerat massa, ac accumsan quam nisl eu augue. Pellentesque eleifend
+          facilisis volutpat. Suspendisse suscipit sem vitae libero sagittis congue. Interdum et malesuada fames ac ante
+          ipsum primis in faucibus. Etiam pretium urna sapien, eu dapibus nisi lacinia feugiat. Sed id libero lorem. Ut
+          vitae velit at sem porta iaculis a nec erat. Pellentesque pharetra sem sed consectetur pellentesque. Praesent
+          vel finibus elit. Sed posuere quam quis mi faucibus accumsan. Nullam diam nulla, ultricies quis odio vel,
+          cursus blandit ligula. </p>
+      </div>
+      <div id="clmn" class="d-flex flex-column">
+        <div class="imagem">
+          <img onclick="imgs.abrir_imagem('./_img/art11.png')" src="./_img/art11.png" alt="">
+        </div>
+        <div id="map">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div>
+      &copy copyright - 2019
+    </div>
+  </footer>
+
+  <div onclick="imgs.fechar_imagem()" class="pop-up-container">
+
+    <div class="pop-up">
+      <button onclick="imgs.fechar_imagem()" type="button" class="close" data-dismiss="popup" aria-label="Fechar">
+        X
+      </button>
+      <img class="ppImg" src="" alt="">
+    </div>
+  </div>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv88N-1aGzJGseB3Yh3pz_6xN0nvj2NhY&callback=initMap">
+  </script>
   <script src="script.js"></script>
   <script src="/DevWebAtvBT/node_modules/jquery/dist/jquery.js"></script>
   <script src="/DevWebAtvBT/node_modules/popper.js/dist/popper.js"></script>
+  
+
 </body>
 
 </html>

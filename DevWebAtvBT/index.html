@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./_img/favicon.ico">
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
   <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/js/all.js">
@@ -17,7 +18,7 @@
     <div class="container">
 
       <!-- <i class="fas fa-times toggle"></i> -->
-      <nav class="navbar navbar-expand-md d-flex align-items-center justify-content-between">
+      <nav class="navbar navbar-expand-lg d-flex align-items-center justify-content-between">
         <a class="navbar-brand" href="#home">
           <h1 class=""> <i class="fas fa-paint-brush"></i>Stepys Gallery</h1>
         </a>
@@ -42,28 +43,43 @@
       </div>
     </div>
   </header>
-  <section id="mostruario" class="mostruario container">
-    <div>
-      <img class="banner1" src="./_img/banner1.jpg" width="700px" alt="banner1">
-      <img class="banner2" src="./_img/banner2.png" alt="banner2">
+
+  <section id="mostruario" class="banner1 d-flex justify-content-center">
+      <div class="bgBn1">
+        </div>
+    <div class="container">
+      <div class="bnr1 d-flex m-3 justify-content-center">
+        <img class="imgBanner1" src="./_img/banner2.png" width="350px" height="150px" alt="Imagem do Banner 1">
+      </div>
     </div>
   </section>
+
+  <section id="mostruario" class="banner2 d-flex justify-content-center">
+      <div class="bgBn2">
+        </div>
+    <div class="container">
+      <div class="bnr2 d-flex m-3 justify-content-center">
+        <img class="imgBanner2" src="./_img/banner4.png" width="350px" height="150px" alt="imagem doBanner 2">
+      </div>
+    </div>
+  </section>
+
   <section id="galeria" class="galeria">
     <div class="container">
       <div class="d-flex">
-        <div class="col-4"><img class="glryImg" src="./_img/art1.png" alt=""></div>
-        <div class="col-4"><img class="glryImg" src="./_img/art2.png" alt=""></div>
-        <div class="col-4"><img class="glryImg" src="./_img/art3.png" alt=""></div>
+        <div class="col-md-4"><img class="glryImg" src="./_img/art1.png" alt=""></div>
+        <div class="col-md-4"><img class="glryImg" src="./_img/art2.png" alt=""></div>
+        <div class="col-md-4"><img class="glryImg" src="./_img/art3.png" alt=""></div>
       </div>
       <div class="d-flex">
-        <div class="col-4"><img class="glryImg" src="./_img/art4.png" alt=""></div>
-        <div class="col-4"><img class="glryImg" src="./_img/art5.png" alt=""></div>
-        <div class="col-4"><img class="glryImg" src="./_img/art6.png" alt=""></div>
+        <div class="col-md-4"><img class="glryImg" src="./_img/art4.png" alt=""></div>
+        <div class="col-md-4"><img class="glryImg" src="./_img/art5.png" alt=""></div>
+        <div class="col-md-4"><img class="glryImg" src="./_img/art6.png" alt=""></div>
       </div>
       <div class="d-flex ">
-        <div class="col-4"><img class="glryImg" src="./_img/art7.png" alt=""></div>
-        <div class="col-4"><img class="glryImg" src="./_img/art8.png" alt=""></div>
-        <div class="col-4"><img class="glryImg" src="./_img/art9.png" alt=""></div>
+        <div class="col-md-4"><img class="glryImg" src="./_img/art7.png" alt=""></div>
+        <div class="col-md-4"><img class="glryImg" src="./_img/art8.png" alt=""></div>
+        <div class="col-md-4"><img class="glryImg" src="./_img/art9.png" alt=""></div>
       </div>
     </div>
   </section>
@@ -92,8 +108,9 @@
           cursus blandit ligula. </p>
       </div>
       <div id="clmn" class="d-flex flex-column">
-        <div class="imagem">
-          <img onclick="imgs.abrir_imagem('./_img/art11.png')" src="./_img/art11.png" alt="">
+        <div class="imagem ali">
+          <img onclick="imgs.abrir_imagem('./_img/art11.png')" width="320px" height="300px" src="./_img/art11.png"
+            alt="">
         </div>
         <div id="map">
         </div>
@@ -116,12 +133,14 @@
     </div>
   </div>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv88N-1aGzJGseB3Yh3pz_6xN0nvj2NhY&callback=initMap">
-  </script>
+
   <script src="script.js"></script>
   <script src="/DevWebAtvBT/node_modules/jquery/dist/jquery.js"></script>
   <script src="/DevWebAtvBT/node_modules/popper.js/dist/popper.js"></script>
-  
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv88N-1aGzJGseB3Yh3pz_6xN0nvj2NhY&callback=initMap">
+    </script>
+
 
 </body>
 

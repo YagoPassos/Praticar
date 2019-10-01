@@ -12,7 +12,7 @@ nav a {
     border-radius: 50px; 
 }
 
-.fa-paint-brush{
+.fa-paint-brush, .fa-bars{
     color: #00F46A;
 }
 nav a:hover{

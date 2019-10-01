@@ -29,33 +29,42 @@ for (i = 0; i < img.length; i++) {
 
 var bgBn1 = document.querySelector('.bgBn1');
 var bgBn2 = document.querySelector('.bgBn2');
-var imgBanner1 = document.querySelector('.imgBanner1');
-var imgBanner2 = document.querySelector('.imgBanner2');
+var banner1 = document.querySelector('.banner1');
+var banner2 = document.querySelector('.banner2');
+var imgBanner1 = document.querySelector('.bnr1');
+var imgBanner2 = document.querySelector('.bnr2');
 
 bgBn1.addEventListener("mouseenter", function () {
-
     bgBn1.style.transition = "500ms";
     bgBn1.style.filter= "blur(2px)";
-    imgBanner1.style.right= "120px";
-    
 });
 bgBn1.addEventListener("mouseout", function () {
     bgBn1.style.transition = "500ms";
     bgBn1.style.filter= "blur(0)";
-    imgBanner1.style.right= "50px";
 });
 bgBn2.addEventListener("mouseenter", function () {
-
     bgBn2.style.transition = "500ms";
-    bgBn2.style.filter= "blur(2px)";
-    imgBanner2.style.right= "120px";
-    
-    
+    bgBn2.style.filter= "blur(2px)";    
 });
 bgBn2.addEventListener("mouseout", function () {
     bgBn2.style.transition = "500ms";
     bgBn2.style.filter= "blur(0)";
-    imgBanner2.style.right= "50px";
+});
+banner1.addEventListener("mouseenter", function () {
+    imgBanner1.style.transition = "800ms";
+    imgBanner1.style.right= "350px";
+});
+banner1.addEventListener("mouseout", function () {
+    imgBanner1.style.transition = "800ms";
+    imgBanner1.style.right= "50px";    
+});
+banner2.addEventListener("mouseenter", function () {
+    imgBanner2.style.transition = "800ms";
+    imgBanner2.style.left= "350px";    
+});
+banner2.addEventListener("mouseout", function () {
+    imgBanner2.style.transition = "800ms";
+    imgBanner2.style.left= "50px";    
 });
 
 

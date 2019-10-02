@@ -66,7 +66,22 @@ banner2.addEventListener("mouseout", function () {
     imgBanner2.style.transition = "800ms";
     imgBanner2.style.left= "50px";    
 });
-
+imgBanner1.addEventListener("mouseenter", function () {
+    imgBanner1.style.transition = "800ms";
+    imgBanner1.style.right= "350px";
+});
+imgBanner1.addEventListener("mouseout", function () {
+    imgBanner1.style.transition = "800ms";
+    imgBanner1.style.right= "50px";    
+});
+imgBanner2.addEventListener("mouseenter", function () {
+    imgBanner2.style.transition = "800ms";
+    imgBanner2.style.left= "350px";    
+});
+imgBanner2.addEventListener("mouseout", function () {
+    imgBanner2.style.transition = "800ms";
+    imgBanner2.style.left= "50px";    
+});
 
 function initMap() {
     var salvador = { lat: -12.97111, lng: -38.51083 };

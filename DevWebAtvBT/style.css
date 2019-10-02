@@ -112,7 +112,7 @@ header > .container {
 .bnr2{
    position: absolute;
    left: 50px;
-   top: 170px;
+   top: 100px;
    box-shadow: 0 0 5px 1px black;
 }
 
@@ -130,7 +130,10 @@ header > .container {
      border: 5px solid white;
      box-shadow: 0 0 0 2px rgb(119, 119, 119);
      cursor: pointer;
-     align-items: center;
+ }
+
+ .glr-d{
+    width: 100%;
  }
 
 .sobre{

@@ -169,42 +169,47 @@ header > .container {
 
 .sobre{
     position: relative;
+    
 }
 
  .sbr {
     position: relative;
+    margin: auto;
+    
 }
 
 .texto{
     position: relative;
     margin: 15px;
-    width: 60%;
-    max-height: 100%;
+    width: 50%;
+    height: 70%;
+    font-size: 1rem;
 }
 #clmn {
     position: relative;
     margin: 15px;
-    width: 40%;
-    height: 100%;
+    width: 50%;
+    height: 70%;
 }
  div .imagem {
-    max-width: 400px;
-    max-height: 300px;
+    width: 70% !important;
+    height: 50% !important;
 }
 .imagem img{
     position: relative;
     cursor: pointer;
     width: 100% !important;
-    height: 100% !important;
-    overflow: hidden;
+    height: 50% !important;
     top: 0;   
 }
-
 #map > div{
+    width: 70% !important;
+    height: 50% !important;
+}
+#map {
     position: relative !important;
     width: 100% !important;
-    height: 40% !important;
-    overflow: hidden !important;
+    height: 50vh !important;
     bottom: 0;
 }
 

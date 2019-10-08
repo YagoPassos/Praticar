@@ -1,3 +1,8 @@
+button:focus {
+    box-shadow: 0 0 0 0 !important;
+    border: 0 none !important;
+    outline: 0 !important;
+}
 nav{
     margin: 0;
     padding: 0 !important;
@@ -12,7 +17,7 @@ nav a {
     border-radius: 50px; 
 }
 
-.fa-paint-brush, .fa-bars{
+.fa-paint-brush, .fa-bars, .fa-times {
     color: #00F46A;
 }
 nav a:hover{
@@ -45,9 +50,35 @@ header > .container {
 
 .navbar-nav, #navbarSite, .collapse, .navbar-collapse{
     flex-grow: unset;
-
 }
 
+.show {
+    transition: 500ms !important;
+}
+@media screen and (max-width: 991px){
+    .nav-item {
+        background-color: rgba(26, 19, 37, 0.267);
+        z-index: 2000;
+        transition: 500ms;
+        height: 33.33vh;
+        align-items: center;
+    }
+    .navbar-nav{
+        top:0;
+        right:0;
+        position: fixed;
+        z-index: 2000;
+        justify-content: center;
+        transition: 500ms;
+    }
+    .fa-times{
+        position: fixed;
+        top: 15px;
+        right: 0;
+        z-index: 2001;
+        transition: 500ms;
+    }
+}
 .hero-text{
    width: 500px;
    margin: auto;
@@ -143,38 +174,48 @@ header > .container {
  .sbr {
     position: relative;
 }
-.texto {
+
+.texto{
+    position: relative;
     margin: 15px;
     width: 60%;
+    max-height: 100%;
 }
 #clmn {
     position: relative;
     margin: 15px;
-
+    width: 40%;
+    height: 100%;
 }
-.imagem {
-    position: absolute;
+ div .imagem {
+    max-width: 400px;
+    max-height: 300px;
+}
+.imagem img{
+    position: relative;
     cursor: pointer;
-    width: 380px !important;
-    height: 250px !important;
+    width: 100% !important;
+    height: 100% !important;
     overflow: hidden;
     top: 0;   
 }
 
-#map {
-    position: absolute;
-    width: 320px;
-    height: 250px;
-    overflow: hidden;
+#map > div{
+    position: relative !important;
+    width: 100% !important;
+    height: 40% !important;
+    overflow: hidden !important;
     bottom: 0;
 }
 
  footer {
+     position: relative;
      background-color: rgb(24, 24, 24);
      color: white;
      text-align: center;
      height: 50px;
      line-height: 50px;
+     bottom: 0;
  }
 
 .pop-up-container{

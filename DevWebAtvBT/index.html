@@ -17,19 +17,19 @@
   <header id="home">
     <div class="container">
 
-      <!-- <i class="fas fa-times toggle"></i> -->
       <nav class="navbar navbar-expand-lg d-flex align-items-center justify-content-between">
         <a class="navbar-brand" href="#home">
           <h1 class=""> <i class="fas fa-paint-brush"></i>Stepys Gallery</h1>
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
-          <i class="fas fa-bars toggle"></i>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite"
+          aria-controls="navbarSite" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fas fa-bars toggle" onclick="op_cl_menu()"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSite">
-          <ul class="navbar-nav nav-list text-center p-0">
-            <li class="nav-item"><a class="nav-link" href="#mostruario" transition="1500ms"><i class="fas fa-eye"></i>
+        <div class="navbar-collapse collapse" id="navbarSite">
+          <ul class="navbar-nav text-center p-0">
+            <li class="nav-item"><a class="nav-link" href="#mostruario"><i class="fas fa-eye"></i>
                 Mostruario</a></li>
             <li class="nav-item"><a class="nav-link" href="#galeria"> <i class="fas fa-image"></i> Galeria</a></li>
             <li class="nav-item"><a class="nav-link" href="#sobre"><i class="fas fa-feather-alt"></i> Sobre</a></li>
@@ -45,18 +45,18 @@
   </header>
 
   <section id="mostruario" class="banner1 d-flex justify-content-center">
-      <div class="bgBn1">
-        </div>
+    <div class="bgBn1">
+    </div>
     <div class="container">
       <div class="bnr1 d-flex m-3 justify-content-center">
-        <img class="imgBanner1" src="./_img/banner2.png" width="350px" height="150px" alt="Imagem do Banner 1">
+        <img class="imgBanner1" src="./_img/banner2.png" width="100%" height="100%" alt="Imagem do Banner 1">
       </div>
     </div>
   </section>
 
   <section id="mostruario" class="banner2 d-flex justify-content-center">
-      <div class="bgBn2">
-        </div>
+    <div class="bgBn2">
+    </div>
     <div class="container">
       <div class="bnr2 d-flex m-3 justify-content-center">
         <img class="imgBanner2" src="./_img/banner4.png" width="100%" height="100%" alt="imagem doBanner 2">
@@ -88,7 +88,8 @@
     <div class="sbr d-flex container">
       <div class="texto">
         <h1>Sobre mim</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis euismod nisi, et dignissim orci
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis euismod nisi, et dignissim orci
           euismod nec. Quisque sollicitudin lorem a justo tincidunt consectetur. Maecenas scelerisque quam nisl. Aenean
           vitae nisl id arcu venenatis semper vitae eget est. Donec fermentum aliquam nunc, in faucibus massa posuere
           ac. Etiam iaculis semper turpis a sagittis. Maecenas ac bibendum diam. Nam a sapien lorem. Curabitur massa
@@ -99,18 +100,11 @@
           orci. Integer euismod ac arcu ac aliquet. Vivamus orci purus, mollis nec feugiat vitae, sagittis sit amet
           felis. Maecenas iaculis sit amet massa ac hendrerit. Mauris vel urna eu odio porttitor ornare sed sodales
           elit.
-
-          In eget vehicula orci, eget dignissim neque. Praesent sit amet nibh ligula. Nunc consequat, neque in
-          pellentesque volutpat, eros turpis placerat massa, ac accumsan quam nisl eu augue. Pellentesque eleifend
-          facilisis volutpat. Suspendisse suscipit sem vitae libero sagittis congue. Interdum et malesuada fames ac ante
-          ipsum primis in faucibus. Etiam pretium urna sapien, eu dapibus nisi lacinia feugiat. Sed id libero lorem. Ut
-          vitae velit at sem porta iaculis a nec erat. Pellentesque pharetra sem sed consectetur pellentesque. Praesent
-          vel finibus elit. Sed posuere quam quis mi faucibus accumsan. Nullam diam nulla, ultricies quis odio vel,
-          cursus blandit ligula. </p>
+        </p>
       </div>
       <div id="clmn" class="d-flex flex-column">
-        <div class="imagem ali">
-          <img onclick="imgs.abrir_imagem('./_img/art11.png')" width="320px" height="300px" src="./_img/art11.png"
+        <div class="imagem">
+          <img onclick="imgs.abrir_imagem('./_img/art11.png')" src="./_img/art11.png"
             alt="">
         </div>
         <div id="map">
